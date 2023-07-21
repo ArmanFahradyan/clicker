@@ -1,0 +1,7 @@
+{
+    "destination": "../change_detection/datasets/google_earth_pro/",
+    "box_coordinates": [40.22, 44.439, 40.222, 44.441],
+    "coordinate_path": "./box_coordinates.txt",
+    "step_height": 0.01,
+    "step_width": 0.01
+}

@@ -25,7 +25,6 @@ def generate_dataset(coordinate_path: str, destination: str, step_height: float,
         get_screenshots(destination, box_coordinate, step_height, step_width)
 
 
-
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     with open(METADATA_JSON, 'r', encoding='UTF-8') as fin:
@@ -33,3 +32,4 @@ if __name__ == "__main__":
         parser.set_defaults(**metadata)
     args = parser.parse_args()
     generate_dataset(args.coordinate_path, args.destination, args.step_height, args.step_width)
+

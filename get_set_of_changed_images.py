@@ -12,21 +12,21 @@ import numpy as np
 from PIL import ImageGrab
 
 
-MOUSE_AWAY_POSITION = (40, 550)
+MOUSE_AWAY_POSITION = (1036, 0)  # (40, 550)
 
-HISTORY_BUTTON_POSITION = (498, 93)
+HISTORY_BUTTON_POSITION = (423, 94)  # (498, 93)
 
-LEFT_ARROW_POSITION = (315, 153)
-RIGHT_ARROW_POSITION = (587, 153)
+LEFT_ARROW_POSITION = (245, 153)  # (315, 153)
+RIGHT_ARROW_POSITION = (513, 153)  # (587, 153)
 
-UPPER_LEFT_CORNER_POSITION = (300, 187)
-LOWER_RIGHT_CORNER_POSITION = (1802, 1107)
+UPPER_LEFT_CORNER_POSITION = (225, 186)  # (300, 187) 1502x920, 1500x780
+LOWER_RIGHT_CORNER_POSITION = (1725, 966) # (1802, 1107)
 
-ZOOM_IN_POSITION = (1876, 323)
-ZOOM_OUT_POSITION = (1876, 443)
+ZOOM_IN_POSITION = (1811, 322)  # (1876, 323)
+# ZOOM_OUT_POSITION = (1876, 443)
 
-SEARCH_BAR_POSITION = (162, 126)
-QUIT_SEARCH_BAR_POSITION = (263, 346)
+SEARCH_BAR_POSITION = (78, 125)  # (162, 126)
+QUIT_SEARCH_BAR_POSITION = (189, 348)  # (263, 346)
 
 METADATA_JSON = "metadata.json"
 
@@ -155,7 +155,7 @@ def save_images(images: dict, x: float, y: float, destination: str):
     """
 
     for sub_dir in ('A', 'B'):
-        images[sub_dir].save(os.path.join(destination, sub_dir, f"{y}°, {x}°.jpg"))
+        images[sub_dir].save(os.path.join(destination, sub_dir, f"{y}°, {x}°.png"))
 
 
 def get_screenshots(destination: str, box_coordinates: list, step_height: float, step_width: float):
